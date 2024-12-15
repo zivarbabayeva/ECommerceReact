@@ -1,11 +1,16 @@
-import Navbar from "./Navbar";
+import Header from "./Header";
+import Navbar from "./Header/Navbar";
 import { Outlet } from "react-router-dom";
+import NavbarBottom from "./Header/NavbarBottom";
 
 export default function RootLayout() {
   return (
     <div>
         <Navbar></Navbar>
-        <Outlet></Outlet>
+        <Header></Header>
+        <NavbarBottom></NavbarBottom>
+         <Outlet></Outlet>
+
     </div>
   )
 }
